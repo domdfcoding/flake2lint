@@ -40,7 +40,7 @@ from typing import Match, Optional
 from domdf_python_tools.paths import PathPlus
 from domdf_python_tools.stringlist import DelimitedList
 from domdf_python_tools.typing import PathLike
-from flake8.style_guide import find_noqa
+from flake8.style_guide import find_noqa  # type: ignore
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2021 Dominic Davis-Foster"
@@ -80,6 +80,7 @@ Search a string for ``# noqa: ...`` comments.
 
 def process_file(filename: PathLike) -> bool:
 	"""
+	Augment flake8 noqa comments with pylint comments in the given file.
 
 	:param filename:
 

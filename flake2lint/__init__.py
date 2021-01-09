@@ -2,7 +2,7 @@
 #
 #  __init__.py
 """
-pre-commit hook to augment flake8 noqa comments with pylint comments.
+pre-commit hook to augment Flake8 noqa comments with PyLint comments.
 """
 #
 #  Copyright © 2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -80,7 +80,7 @@ Search a string for ``# noqa: ...`` comments.
 
 def process_file(filename: PathLike) -> bool:
 	"""
-	Augment flake8 noqa comments with pylint comments in the given file.
+	Augment Flake8 noqa comments with PyLint comments in the given file.
 
 	:param filename:
 

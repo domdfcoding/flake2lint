@@ -2,7 +2,7 @@
 #
 #  __main__.py
 """
-pre-commit hook to augment flake8 noqa comments with pylint comments.
+pre-commit hook to augment Flake8 noqa comments with PyLint comments.
 """
 #
 #  Copyright © 2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
@@ -48,7 +48,7 @@ __all__ = ["main"]
 @click_command()
 def main(filenames: Iterable[PathLike], recursive: bool = False):
 	"""
-	Augment flake8 noqa comments with pylint comments.
+	Augment Flake8 noqa comments with PyLint comments.
 	"""
 
 	# stdlib

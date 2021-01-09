@@ -1,0 +1,6 @@
+-   id: flake2lint
+    name: Flake8 -> PyLint
+    description: Augment Flake8 noqa comments with PyLint comments.
+    entry: flake2lint
+    language: python
+    types: [python]

@@ -13,7 +13,7 @@ sys.path.append('.')
 from __pkginfo__ import *  # pylint: disable=wildcard-import
 
 setup(
-		description="pre-commit hook to augment flake8 noqa comments with pylint comments.",
+		description="Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments.",
 		extras_require=extras_require,
 		install_requires=install_requires,
 		py_modules=[],

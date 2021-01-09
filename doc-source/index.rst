@@ -4,7 +4,7 @@ flake2lint
 
 .. start short_desc
 
-**pre-commit hook to augment flake8 noqa comments with pylint comments.**
+**Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments.**
 
 .. end short_desc
 

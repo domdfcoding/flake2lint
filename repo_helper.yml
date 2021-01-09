@@ -7,7 +7,7 @@ email: 'dominic@davis-foster.co.uk'
 username: 'domdfcoding'
 version: '0.0.0'
 license: 'MIT'
-short_desc: 'pre-commit hook to augment flake8 noqa comments with pylint comments.'
+short_desc: 'Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments.'
 
 enable_conda: false
 enable_tests: false

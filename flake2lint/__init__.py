@@ -52,6 +52,7 @@ __all__ = ["find_pylint_disable", "process_file", "find_noqa"]
 
 code_mapping = {
 		"A002": "redefined-builtin",
+		"A003": "redefined-builtin",
 		}
 
 PYLINT_INLINE_REGEXP = re.compile(

@@ -17,9 +17,11 @@ flake2lint
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |actions_linux| |actions_windows| |actions_macos|
+	  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
+	* - PyPI
+	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
-	  - |commits-latest| |commits-since| |maintained|
+	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 	* - QA
 	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
 	* - Other
@@ -56,8 +58,31 @@ flake2lint
 .. |requires| requires-io-shield::
 	:alt: Requirements Status
 
+.. |coveralls| coveralls-shield::
+	:alt: Coverage
+
 .. |codefactor| codefactor-shield::
 	:alt: CodeFactor Grade
+
+.. |pypi-version| pypi-shield::
+	:project: flake2lint
+	:version:
+	:alt: PyPI - Package Version
+
+.. |supported-versions| pypi-shield::
+	:project: flake2lint
+	:py-versions:
+	:alt: PyPI - Supported Python Versions
+
+.. |supported-implementations| pypi-shield::
+	:project: flake2lint
+	:implementations:
+	:alt: PyPI - Supported Implementations
+
+.. |wheel| pypi-shield::
+	:project: flake2lint
+	:wheel:
+	:alt: PyPI - Wheel
 
 .. |license| github-shield::
 	:license:
@@ -78,6 +103,11 @@ flake2lint
 .. |maintained| maintained-shield:: 2021
 	:alt: Maintenance
 
+.. |pypi-downloads| pypi-shield::
+	:project: flake2lint
+	:downloads: month
+	:alt: PyPI - Downloads
+
 .. |pre_commit_ci| pre-commit-ci-shield::
 	:alt: pre-commit.ci status
 
@@ -89,6 +119,7 @@ Installation
 .. start installation
 
 .. installation:: flake2lint
+	:pypi:
 	:github:
 
 .. end installation

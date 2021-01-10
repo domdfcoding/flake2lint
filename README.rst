@@ -18,9 +18,11 @@ flake2lint
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |actions_linux| |actions_windows| |actions_macos|
+	  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
+	* - PyPI
+	  - |pypi-version| |supported-versions| |supported-implementations| |wheel|
 	* - Activity
-	  - |commits-latest| |commits-since| |maintained|
+	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
 	* - QA
 	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
 	* - Other
@@ -58,9 +60,29 @@ flake2lint
 	:target: https://requires.io/github/domdfcoding/flake2lint/requirements/?branch=master
 	:alt: Requirements Status
 
+.. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/flake2lint/master?logo=coveralls
+	:target: https://coveralls.io/github/domdfcoding/flake2lint?branch=master
+	:alt: Coverage
+
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/flake2lint?logo=codefactor
 	:target: https://www.codefactor.io/repository/github/domdfcoding/flake2lint
 	:alt: CodeFactor Grade
+
+.. |pypi-version| image:: https://img.shields.io/pypi/v/flake2lint
+	:target: https://pypi.org/project/flake2lint/
+	:alt: PyPI - Package Version
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/flake2lint?logo=python&logoColor=white
+	:target: https://pypi.org/project/flake2lint/
+	:alt: PyPI - Supported Python Versions
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/flake2lint
+	:target: https://pypi.org/project/flake2lint/
+	:alt: PyPI - Supported Implementations
+
+.. |wheel| image:: https://img.shields.io/pypi/wheel/flake2lint
+	:target: https://pypi.org/project/flake2lint/
+	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/flake2lint
 	:target: https://github.com/domdfcoding/flake2lint/blob/master/LICENSE
@@ -80,6 +102,10 @@ flake2lint
 .. |maintained| image:: https://img.shields.io/maintenance/yes/2021
 	:alt: Maintenance
 
+.. |pypi-downloads| image:: https://img.shields.io/pypi/dm/flake2lint
+	:target: https://pypi.org/project/flake2lint/
+	:alt: PyPI - Downloads
+
 .. |pre_commit_ci| image:: https://results.pre-commit.ci/badge/github/domdfcoding/flake2lint/master.svg
 	:target: https://results.pre-commit.ci/latest/github/domdfcoding/flake2lint/master
 	:alt: pre-commit.ci status
@@ -91,12 +117,12 @@ Installation
 
 .. start installation
 
-``flake2lint`` can be installed from GitHub.
+``flake2lint`` can be installed from PyPI.
 
 To install with ``pip``:
 
 .. code-block:: bash
 
-	$ python -m pip install git+https://github.com/domdfcoding/flake2lint
+	$ python -m pip install flake2lint
 
 .. end installation

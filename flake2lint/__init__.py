@@ -56,7 +56,7 @@ code_mapping = {
 		}
 
 PYLINT_INLINE_REGEXP = re.compile(
-		r"# pylint(?::[\s]?disable=(?P<checks>([A-Z0-9-]+(?:[,;\s]+)?)+))?",
+		r'# pylint(?::[\s]?disable=(?P<checks>([A-Z0-9-]+(?:[,;\s]+)?)+))?',
 		re.IGNORECASE,
 		)
 
@@ -95,7 +95,10 @@ def process_file(filename: PathLike) -> bool:
 	for idx, line in enumerate(contents):
 		noqa = find_noqa(line)
 
-		if noqa is None or noqa.groupdict()["codes"] is None:
+		if noqa is None:
+			continue
+
+		if noqa.groupdict()["codes"] is None:
 			continue
 
 		# Line has one or more noqa codes

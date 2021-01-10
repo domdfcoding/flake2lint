@@ -1,0 +1,4 @@
+def foo(  # noqa
+	id: int = -1,  # noqa: A002  # pylint: disable=redefined-builtin
+	dir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin
+	): ...

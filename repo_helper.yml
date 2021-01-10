@@ -10,8 +10,6 @@ license: 'MIT'
 short_desc: 'Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments.'
 
 enable_conda: false
-enable_tests: false
-on_pypi: false
 
 python_versions:
  - 3.6

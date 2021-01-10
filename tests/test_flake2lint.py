@@ -31,6 +31,6 @@ def test_flake2lint(example_file, file_regression: FileRegressionFixture):
 def test_cli(example_file, tmp_pathplus, file_regression: FileRegressionFixture):
 	runner = CliRunner()
 
-	result: Result = runner.invoke(main, catch_exceptions=False, args=str(example_file))
-	assert result.exit_code == 1
+	result: Result = runner.invoke(main, catch_exceptions=False, args=[str(example_file)])
 	check_file_output(example_file, file_regression)
+	assert result.exit_code == 1

@@ -38,3 +38,5 @@ classifiers:
  - 'Environment :: Console'
  - 'Framework :: Flake8'
  - 'Intended Audience :: Developers'
+
+pre_commit_exclude: "^tests/test_flake2lint"

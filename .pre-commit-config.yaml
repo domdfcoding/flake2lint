@@ -1,7 +1,7 @@
 # This file is managed by 'repo_helper'. Don't edit it directly.
 ---
 
-exclude: ^$
+exclude: ^tests/test_flake2lint
 
 repos:
  - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -39,6 +39,11 @@ repos:
    hooks:
     - id: ensure-dunder-all
       files: ^flake2lint/.*\.py$
+
+ - repo: https://github.com/domdfcoding/flake2lint
+   rev: v0.1.0
+   hooks:
+    - id: flake2lint
 
  - repo: https://github.com/pre-commit/pygrep-hooks
    rev: v1.7.0

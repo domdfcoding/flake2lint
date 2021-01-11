@@ -129,8 +129,12 @@ def process_file(filename: PathLike) -> bool:
 			buf.extend([
 					"  # pylint: disable=",
 					f"{DelimitedList(sorted(disabled_checks)):,}",
-					line_after_comments,
 					])
+
+		buf.extend([
+				"  ",
+				line_after_comments.lstrip(),
+				])
 
 		contents[idx] = ''.join(buf)
 

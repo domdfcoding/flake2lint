@@ -1,4 +1,8 @@
 def foo(  # noqa
-	id: int = -1,  # noqa: A002  # pylint: disable=redefined-builtin
+	id: int = -1,  # noqa: A002  # pylint: disable=redefined-builtin  # pragma: no cover
 	dir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin
 	): ...
+
+def easter_egg() -> None:  # noqa: D102,D103  # pragma: no cover
+	easter = calc_easter(today.year)
+	easter_margin = timedelta(days=7)

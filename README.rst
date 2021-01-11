@@ -91,7 +91,7 @@ flake2lint
 .. |language| image:: https://img.shields.io/github/languages/top/domdfcoding/flake2lint
 	:alt: GitHub top language
 
-.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/flake2lint/v0.0.0
+.. |commits-since| image:: https://img.shields.io/github/commits-since/domdfcoding/flake2lint/v0.1.0
 	:target: https://github.com/domdfcoding/flake2lint/pulse
 	:alt: GitHub commits since tagged version
 

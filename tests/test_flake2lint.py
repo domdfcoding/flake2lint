@@ -15,7 +15,7 @@ def example_file(tmp_pathplus):
 
 	example_file.write_lines([
 			"def foo(  # noqa",
-			"\tid: int = -1,  # noqa: A002",
+			"\tid: int = -1,  # noqa: A002  # pylint: disable=redefined-builtin",
 			"\tdir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin",
 			"\t): ...",
 			])

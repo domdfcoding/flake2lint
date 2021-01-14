@@ -1,3 +1,5 @@
+# noqa: D100
+
 def foo(  # noqa
 	id: int = -1,  # noqa: A002  # pylint: disable=redefined-builtin  # pragma: no cover
 	dir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin

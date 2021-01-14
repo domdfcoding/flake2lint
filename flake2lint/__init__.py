@@ -104,7 +104,7 @@ def process_file(filename: PathLike) -> bool:
 		# Line has one or more noqa codes
 		flake8_codes = DelimitedList(filter(bool, re.split("[,; ]", noqa.groupdict()["codes"])))
 
-		line_before_comment = line[:noqa.span()[0]]
+		line_before_comment = line[:noqa.span()[0]].rstrip()
 		line_after_comments = line[noqa.span()[1]:]
 
 		# Search for pylint: disable= after the noqa comment
@@ -123,7 +123,10 @@ def process_file(filename: PathLike) -> bool:
 
 		disabled_checks = set(filter(bool, map(str.strip, disabled_checks)))
 
-		buf = [line_before_comment.rstrip(), f"  # noqa: {flake8_codes:,}"]
+		if line_before_comment:
+			buf = [line_before_comment, f"  # noqa: {flake8_codes:,}"]
+		else:
+			buf = [f"# noqa: {flake8_codes:,}"]
 
 		if disabled_checks:
 			buf.extend([

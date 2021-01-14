@@ -14,6 +14,8 @@ def example_file(tmp_pathplus):
 	example_file = tmp_pathplus / "code.py"
 
 	example_file.write_lines([
+			'# noqa: D100',
+			'',
 			"def foo(  # noqa",
 			"\tid: int = -1,  # noqa: A002  # pragma: no cover",
 			"\tdir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin",

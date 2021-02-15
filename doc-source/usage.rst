@@ -10,6 +10,10 @@ flake2lint
 	:nested: none
 
 
+.. versionadded:: 0.3.0
+
+	Added the :option:`-v / --verbose <-v>` option.
+
 pre-commit hook
 ------------------
 

@@ -1,7 +1,7 @@
 # 3rd party
 import pytest
-from click.testing import CliRunner, Result
-from domdf_python_tools.testing import check_file_output
+from consolekit.testing import CliRunner, Result
+from coincidence import check_file_output
 from pytest_regressions.file_regression import FileRegressionFixture
 
 # this package
@@ -40,4 +40,13 @@ def test_cli(example_file, tmp_pathplus, file_regression: FileRegressionFixture)
 
 	result: Result = runner.invoke(main, catch_exceptions=False, args=[str(example_file)])
 	check_file_output(example_file, file_regression)
+	assert result.exit_code == 1
+
+
+def test_cli_verbose(example_file, tmp_pathplus, file_regression: FileRegressionFixture):
+	runner = CliRunner()
+
+	result: Result = runner.invoke(main, catch_exceptions=False, args=[str(example_file), "--verbose"])
+	assert result.stdout.rstrip().endswith("code.py'")
+	assert result.stdout.startswith("Rewriting '")
 	assert result.exit_code == 1

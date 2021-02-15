@@ -33,7 +33,7 @@ from typing import Iterable
 # 3rd party
 import click
 from consolekit import click_command
-from consolekit.options import flag_option
+from consolekit.options import flag_option, verbose_option
 from domdf_python_tools.typing import PathLike
 
 __all__ = ["main"]
@@ -45,8 +45,13 @@ __all__ = ["main"]
 		help="Permits the use of the pattern '**' to match any files, directories and subdirectories.",
 		)
 @click.argument("filenames", type=click.STRING, nargs=-1)
+@verbose_option()
 @click_command()
-def main(filenames: Iterable[PathLike], recursive: bool = False):
+def main(
+		filenames: Iterable[PathLike],
+		recursive: bool = False,
+		verbose: int = 0,
+		):
 	"""
 	Augment Flake8 noqa comments with PyLint comments.
 	"""
@@ -69,7 +74,12 @@ def main(filenames: Iterable[PathLike], recursive: bool = False):
 		if ".git" in file.parts or "venv" in file.parts or ".tox" in file.parts:
 			continue
 
-		ret |= process_file(file)
+		ret_for_file = process_file(file)
+
+		if ret_for_file and verbose:
+			click.echo(f"Rewriting '{file!s}'")
+
+		ret |= ret_for_file
 
 	sys.exit(ret)
 

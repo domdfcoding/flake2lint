@@ -3,4 +3,4 @@
     description: Augment Flake8 noqa comments with PyLint comments.
     entry: flake2lint
     language: python
-    types: [python]
+    types_or: [python, pyi]

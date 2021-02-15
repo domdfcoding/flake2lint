@@ -5,7 +5,7 @@ copyright_years: '2021'
 author: 'Dominic Davis-Foster'
 email: 'dominic@davis-foster.co.uk'
 username: 'domdfcoding'
-version: '0.2.0'
+version: '0.3.0'
 license: 'MIT'
 short_desc: 'Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments.'
 

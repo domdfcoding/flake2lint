@@ -20,6 +20,6 @@ pre-commit hook
 Sample ``.pre-commit-config.yaml``:
 
 .. pre-commit::
-	:rev: v0.2.0
+	:rev: v0.3.0
 
 See `pre-commit <https://github.com/pre-commit/pre-commit>`_ for further information.

@@ -42,3 +42,4 @@ classifiers:
  - 'Intended Audience :: Developers'
 
 pre_commit_exclude: "^tests/test_flake2lint"
+use_whey: true

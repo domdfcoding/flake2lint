@@ -1,6 +1,6 @@
 [build-system]
-requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
-build-backend = "setuptools.build_meta"
+requires = [ "whey",]
+build-backend = "whey"
 
 [project]
 name = "flake2lint"
@@ -24,3 +24,16 @@ Documentation = "https://flake2lint.readthedocs.io/en/latest"
 
 [project.scripts]
 flake2lint = "flake2lint.__main__:main"
+
+[tool.whey]
+base-classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Framework :: Flake8",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython", "PyPy",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"

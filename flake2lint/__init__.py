@@ -51,6 +51,7 @@ __email__: str = "dominic@davis-foster.co.uk"
 __all__ = ["find_pylint_disable", "process_file", "find_noqa"]
 
 code_mapping = {
+		"A001": "redefined-builtin",
 		"A002": "redefined-builtin",
 		"A003": "redefined-builtin",
 		}

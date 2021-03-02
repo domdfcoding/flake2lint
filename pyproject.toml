@@ -1,3 +1,26 @@
 [build-system]
 requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "flake2lint"
+version = "0.3.0"
+description = "Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments."
+readme = "README.rst"
+keywords = [ "flake8", "pylint", "pre-commit",]
+dynamic = [ "requires-python", "classifiers", "dependencies",]
+[[project.authors]]
+email = "dominic@davis-foster.co.uk"
+name = "Dominic Davis-Foster"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/domdfcoding/flake2lint"
+"Issue Tracker" = "https://github.com/domdfcoding/flake2lint/issues"
+"Source Code" = "https://github.com/domdfcoding/flake2lint"
+Documentation = "https://flake2lint.readthedocs.io/en/latest"
+
+[project.scripts]
+flake2lint = "flake2lint.__main__:main"

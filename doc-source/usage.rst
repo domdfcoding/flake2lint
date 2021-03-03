@@ -30,6 +30,9 @@ Supported Flake8 Codes
 ``flake2lint`` currently augments the following flake8 codes:
 
 * ``A001`` ➞ ``redefined-builtin``
+
+  .. versionadded:: 0.4.0
+
 * ``A002`` ➞ ``redefined-builtin``
 * ``A003`` ➞ ``redefined-builtin``
 

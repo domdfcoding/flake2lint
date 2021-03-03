@@ -4,7 +4,7 @@ build-backend = "whey"
 
 [project]
 name = "flake2lint"
-version = "0.3.0"
+version = "0.4.0"
 description = "Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments."
 readme = "README.rst"
 keywords = [ "flake8", "pylint", "pre-commit",]

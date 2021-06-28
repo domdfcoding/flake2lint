@@ -1,1 +1,1 @@
-pytest_plugins = ("coincidence", )
+pytest_plugins = ("coincidence", "consolekit.testing")

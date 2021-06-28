@@ -140,8 +140,11 @@ def process_file(filename: PathLike) -> bool:
 				line_after_comments.lstrip(),
 				])
 
-		contents[idx] = ''.join(buf)
+		contents[idx] = ''.join(buf).rstrip()
 
-	file.write_lines(contents)
+	changed = contents != original_contents
 
-	return file.read_lines() != original_contents
+	if changed:
+		file.write_lines(contents, trailing_whitespace=True)
+
+	return changed

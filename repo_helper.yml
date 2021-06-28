@@ -9,7 +9,11 @@ version: '0.4.0'
 license: 'MIT'
 short_desc: 'Tool and pre-commit hook to augment Flake8 noqa comments with PyLint comments.'
 
+use_whey: true
 enable_conda: false
+sphinx_html_theme: furo
+standalone_contrib_guide: true
+pre_commit_exclude: "^tests/test_flake2lint"
 
 python_versions:
  - 3.6
@@ -27,9 +31,6 @@ extra_sphinx_extensions:
  - sphinx_click
  - sphinx_toolbox.pre_commit
 
-standalone_contrib_guide: true
-sphinx_html_theme: furo
-
 keywords:
  - flake8
  - pylint
@@ -40,6 +41,3 @@ classifiers:
  - 'Environment :: Console'
  - 'Framework :: Flake8'
  - 'Intended Audience :: Developers'
-
-pre_commit_exclude: "^tests/test_flake2lint"
-use_whey: true

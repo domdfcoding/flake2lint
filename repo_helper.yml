@@ -14,6 +14,7 @@ enable_conda: false
 sphinx_html_theme: furo
 standalone_contrib_guide: true
 pre_commit_exclude: "^tests/test_flake2lint"
+mypy_version: "0.910"
 
 python_versions:
  - 3.6

@@ -73,6 +73,9 @@ extensions = [
     "seed_intersphinx_mapping",
     "sphinx_click",
     "sphinx_toolbox.pre_commit",
+    "local_extension",
+    "sphinx_toolbox_experimental.html_section",
+    "sphinx_toolbox_experimental.needspace",
 ]
 sphinxemoji_style = "twemoji"
 gitstamp_fmt = "%d %b %Y"

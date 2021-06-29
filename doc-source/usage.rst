@@ -9,6 +9,7 @@ flake2lint
 	:prog: flake2lint
 	:nested: none
 
+.. latex:vspace:: 20px
 
 .. versionchanged:: 0.3.0
 

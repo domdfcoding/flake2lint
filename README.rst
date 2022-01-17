@@ -166,16 +166,16 @@ Before:
 	class FancyDialog(wx.Dialog):
 
 		def __init__(
-			self,
-			parent,
-			id=wx.ID_ANY,  # noqa: A002
-			title='My Fancy Dialog',
-			pos=wx.DefaultPosition,
-			size=wx.DefaultSize,
-			style=wx.DEFAULT_DIALOG_STYLE,
-			name=wx.DialogNameStr,
-			data=None
-			): ...
+				self,
+				parent,
+				id=wx.ID_ANY,  # noqa: A002
+				title="My Fancy Dialog",
+				pos=wx.DefaultPosition,
+				size=wx.DefaultSize,
+				style=wx.DEFAULT_DIALOG_STYLE,
+				name=wx.DialogNameStr,
+				data=None
+				): ...
 
 After:
 
@@ -184,13 +184,13 @@ After:
 	class FancyDialog(wx.Dialog):
 
 		def __init__(
-			self,
-			parent,
-			id=wx.ID_ANY,  # noqa: A002  # pylint: disable=redefined-builtin
-			title='My Fancy Dialog',
-			pos=wx.DefaultPosition,
-			size=wx.DefaultSize,
-			style=wx.DEFAULT_DIALOG_STYLE,
-			name=wx.DialogNameStr,
-			data=None
-			): ...
+				self,
+				parent,
+				id=wx.ID_ANY,  # noqa: A002  # pylint: disable=redefined-builtin
+				title="My Fancy Dialog",
+				pos=wx.DefaultPosition,
+				size=wx.DefaultSize,
+				style=wx.DEFAULT_DIALOG_STYLE,
+				name=wx.DialogNameStr,
+				data=None
+				): ...

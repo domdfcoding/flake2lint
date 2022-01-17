@@ -56,8 +56,8 @@ flake2lint
 	:target: https://github.com/domdfcoding/flake2lint/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://requires.io/github/domdfcoding/flake2lint/requirements.svg?branch=master
-	:target: https://requires.io/github/domdfcoding/flake2lint/requirements/?branch=master
+.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/badge.svg
+	:target: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/
 	:alt: Requirements Status
 
 .. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/flake2lint/master?logo=coveralls
@@ -99,7 +99,7 @@ flake2lint
 	:target: https://github.com/domdfcoding/flake2lint/commit/master
 	:alt: GitHub last commit
 
-.. |maintained| image:: https://img.shields.io/maintenance/yes/2021
+.. |maintained| image:: https://img.shields.io/maintenance/yes/2022
 	:alt: Maintenance
 
 .. |pypi-downloads| image:: https://img.shields.io/pypi/dm/flake2lint
@@ -166,16 +166,16 @@ Before:
 	class FancyDialog(wx.Dialog):
 
 		def __init__(
-			self,
-			parent,
-			id=wx.ID_ANY,  # noqa: A002
-			title='My Fancy Dialog',
-			pos=wx.DefaultPosition,
-			size=wx.DefaultSize,
-			style=wx.DEFAULT_DIALOG_STYLE,
-			name=wx.DialogNameStr,
-			data=None
-			): ...
+				self,
+				parent,
+				id=wx.ID_ANY,  # noqa: A002
+				title="My Fancy Dialog",
+				pos=wx.DefaultPosition,
+				size=wx.DefaultSize,
+				style=wx.DEFAULT_DIALOG_STYLE,
+				name=wx.DialogNameStr,
+				data=None
+				): ...
 
 After:
 
@@ -184,13 +184,13 @@ After:
 	class FancyDialog(wx.Dialog):
 
 		def __init__(
-			self,
-			parent,
-			id=wx.ID_ANY,  # noqa: A002  # pylint: disable=redefined-builtin
-			title='My Fancy Dialog',
-			pos=wx.DefaultPosition,
-			size=wx.DefaultSize,
-			style=wx.DEFAULT_DIALOG_STYLE,
-			name=wx.DialogNameStr,
-			data=None
-			): ...
+				self,
+				parent,
+				id=wx.ID_ANY,  # noqa: A002  # pylint: disable=redefined-builtin
+				title="My Fancy Dialog",
+				pos=wx.DefaultPosition,
+				size=wx.DefaultSize,
+				style=wx.DEFAULT_DIALOG_STYLE,
+				name=wx.DialogNameStr,
+				data=None
+				): ...

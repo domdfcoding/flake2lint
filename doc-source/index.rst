@@ -58,7 +58,8 @@ flake2lint
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| requires-io-shield::
+	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/badge.svg
+		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
@@ -103,7 +104,7 @@ flake2lint
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2021
+	.. |maintained| maintained-shield:: 2022
 		:alt: Maintenance
 
 	.. |pypi-downloads| pypi-shield::

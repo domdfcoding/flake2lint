@@ -15,7 +15,6 @@ sphinx_html_theme: furo
 standalone_contrib_guide: true
 docs_fail_on_warning: true
 pre_commit_exclude: "^tests/test_flake2lint"
-mypy_version: "0.910"
 
 python_versions:
  - 3.6

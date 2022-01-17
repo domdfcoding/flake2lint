@@ -13,6 +13,7 @@ use_whey: true
 enable_conda: false
 sphinx_html_theme: furo
 standalone_contrib_guide: true
+docs_fail_on_warning: true
 pre_commit_exclude: "^tests/test_flake2lint"
 mypy_version: "0.910"
 
@@ -34,7 +35,6 @@ extra_sphinx_extensions:
  - sphinx_click
  - sphinx_toolbox.pre_commit
  - local_extension
- - sphinx_toolbox_experimental.html_section
  - sphinx_toolbox_experimental.needspace
 
 keywords:

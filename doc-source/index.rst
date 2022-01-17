@@ -143,6 +143,7 @@ Contents
 	api
 	contributing
 	Source
+	license
 
 .. sidebar-links::
 	:caption: Links

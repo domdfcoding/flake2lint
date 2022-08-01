@@ -40,7 +40,7 @@ from typing import Match, Optional
 from domdf_python_tools.paths import PathPlus
 from domdf_python_tools.stringlist import DelimitedList
 from domdf_python_tools.typing import PathLike
-from flake8.style_guide import find_noqa  # type: ignore
+from flake8 import defaults  # type: ignore[import]
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2021 Dominic Davis-Foster"
@@ -73,11 +73,15 @@ def find_pylint_disable(physical_line: str) -> Optional[Match[str]]:
 	return PYLINT_INLINE_REGEXP.search(physical_line)
 
 
-find_noqa.__doc__ = """
-Search a string for ``# noqa: ...`` comments.
+@lru_cache(maxsize=512)
+def find_noqa(physical_line: str) -> Optional[Match[str]]:
+	"""
+	Search a string for ``# noqa: ...`` comments.
 
-:param physical_line:
-"""
+	:param physical_line:
+	"""
+
+	return defaults.NOQA_INLINE_REGEXP.search(physical_line)
 
 
 def process_file(filename: PathLike) -> bool:

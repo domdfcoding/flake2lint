@@ -58,8 +58,8 @@ flake2lint
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/badge.svg
-		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/flake2lint/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/flake2lint/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::

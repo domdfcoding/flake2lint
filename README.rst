@@ -56,8 +56,8 @@ flake2lint
 	:target: https://github.com/domdfcoding/flake2lint/actions?query=workflow%3A%22mypy%22
 	:alt: mypy status
 
-.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/badge.svg
-	:target: https://dependency-dash.herokuapp.com/github/domdfcoding/flake2lint/
+.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/flake2lint/badge.svg
+	:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/flake2lint/
 	:alt: Requirements Status
 
 .. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/flake2lint/master?logo=coveralls

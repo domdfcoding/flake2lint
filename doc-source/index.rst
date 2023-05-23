@@ -97,7 +97,7 @@ flake2lint
 		:alt: GitHub top language
 
 	.. |commits-since| github-shield::
-		:commits-since: v0.4.2
+		:commits-since: v0.4.3
 		:alt: GitHub commits since tagged version
 
 	.. |commits-latest| github-shield::

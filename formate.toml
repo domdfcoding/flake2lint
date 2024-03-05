@@ -47,5 +47,5 @@ known_third_party = [
     "pytest_timeout",
     "requests",
 ]
-known_first_party = "flake2lint"
+known_first_party = [ "flake2lint",]
 line_length = 115

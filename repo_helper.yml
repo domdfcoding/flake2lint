@@ -17,14 +17,12 @@ docs_fail_on_warning: true
 pre_commit_exclude: "^tests/test_flake2lint"
 
 python_versions:
- - 3.6
  - 3.7
  - 3.8
  - 3.9
  - "3.10"
  - "3.11"
- - 3.12-dev
- - pypy36
+ - "3.12"
  - pypy37
  - pypy38
  - pypy39

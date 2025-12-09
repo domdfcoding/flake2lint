@@ -40,7 +40,7 @@ from typing import Match, Optional
 from domdf_python_tools.paths import PathPlus
 from domdf_python_tools.stringlist import DelimitedList
 from domdf_python_tools.typing import PathLike
-from flake8 import defaults  # type: ignore[import]
+from flake8 import defaults  # type: ignore[import-untyped]
 
 __author__: str = "Dominic Davis-Foster"
 __copyright__: str = "2021 Dominic Davis-Foster"

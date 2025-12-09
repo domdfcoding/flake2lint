@@ -51,7 +51,7 @@ def main(
 		filenames: Iterable[PathLike],
 		recursive: bool = False,
 		verbose: int = 0,
-		):
+		) -> None:
 	"""
 	Augment Flake8 noqa comments with PyLint comments.
 	"""

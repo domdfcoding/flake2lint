@@ -6,14 +6,14 @@ import pytest
 from coincidence import check_file_output
 from consolekit.testing import CliRunner, Result
 from pytest_regressions.file_regression import FileRegressionFixture
-
+from domdf_python_tools.paths import PathPlus
 # this package
 from flake2lint import process_file
 from flake2lint.__main__ import main
 
 
 @pytest.fixture()
-def example_file(tmp_pathplus):
+def example_file(tmp_pathplus: PathPlus) -> PathPlus:
 	example_file = tmp_pathplus / "code.py"
 
 	example_file.write_lines([
@@ -33,7 +33,7 @@ def example_file(tmp_pathplus):
 	return example_file
 
 
-def test_flake2lint(example_file, file_regression: FileRegressionFixture):
+def test_flake2lint(example_file: PathPlus, file_regression: FileRegressionFixture):
 	st = (example_file).stat()
 	assert st == st
 
@@ -57,8 +57,7 @@ def test_flake2lint(example_file, file_regression: FileRegressionFixture):
 
 
 def test_cli(
-		example_file,
-		tmp_pathplus,
+		example_file: PathPlus,
 		file_regression: FileRegressionFixture,
 		cli_runner: CliRunner,
 		):
@@ -87,9 +86,8 @@ def test_cli(
 
 
 def test_cli_verbose(
-		example_file,
-		tmp_pathplus,
-		file_regression: FileRegressionFixture,
+		example_file: PathPlus,
+		tmp_pathplus: PathPlus,
 		cli_runner: CliRunner,
 		):
 	result: Result

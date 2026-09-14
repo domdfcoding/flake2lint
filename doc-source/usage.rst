@@ -58,7 +58,7 @@ Before:
 				size=wx.DefaultSize,
 				style=wx.DEFAULT_DIALOG_STYLE,
 				name=wx.DialogNameStr,
-				data=None
+				data=None,
 				): ...
 
 After:
@@ -76,5 +76,5 @@ After:
 				size=wx.DefaultSize,
 				style=wx.DEFAULT_DIALOG_STYLE,
 				name=wx.DialogNameStr,
-				data=None
+				data=None,
 				): ...
